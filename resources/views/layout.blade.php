@@ -15,7 +15,8 @@
     <meta property="og:url" content="http://www.svanclinic.vn/trang-chu" />
     <meta property="og:site_name" content="SVAN CLINIC" />
     <meta property="og:image" content="http://www.svanclinic.vn" />
-	<meta property="fb:app_id" content="233253610499667" />
+    <meta property="fb:app_id" content="233253610499667" />
+    <link href="https://fonts.googleapis.com/css?family=Elsie:400,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 	
 	<title>Svan Clinic & Spa - Giảm béo và trị liệu da hàng đầu Việt Nam</title>
@@ -24,6 +25,7 @@
 
     <!-- Custom Style -->
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <script src="js/jquery.min.js"></script>
 	
 	<!-- Added by TinHo-->
@@ -54,14 +56,14 @@
                 <div class="menu-wrapper">
                     <ul>
                                     <li class="home">
-                                    <a href="/" class="home-link" rel="nofollow">
-                                        <!-- <img width="auto" src="http://www.svanclinic.vn/Content/layout/images/logo/logo.png" alt="">--> </a>
+                                    <a href="{{url('/')}}" class="home-link" rel="nofollow">
+                                        <img width="auto" src="img/logo.png" alt=""> </a>
                                 </li>
                                         <li>
-                                            <a href="/gioi-thieu" rel="nofollow">Giới thiệu</a>
+                                            <a href="{{url('/gioi-thieu')}}" rel="nofollow">Giới thiệu</a>
                                         </li>
                                         <li class="hassub">
-                                            <a href="/dich-vu" rel="nofollow">Dịch vụ</a>
+                                            <a href="{{url('/dich-vu')}}" rel="nofollow">Dịch vụ</a>
                                             <div class="submenu">
                                                 <ul>
                                                         <li>
@@ -135,7 +137,7 @@
                                             <a href="/khuyen-mai" rel="nofollow">Khuyến M&#227;i</a>
                                         </li>
                                         <li class="hassub">
-                                            <a href="/tin-tuc" rel="nofollow">Tin Tức</a>
+                                            <a href="{{url('/tin-tuc')}}" rel="nofollow">Tin Tức</a>
                                             <div class="submenu">
                                                 <ul>
                                                         <li>
@@ -167,7 +169,7 @@
                                             </div>
                                         </li>
                                         <li>
-                                            <a href="/lien-he" rel="nofollow">Li&#234;n Hệ</a>
+                                            <a href="{{url('/contact')}}" rel="nofollow">Li&#234;n Hệ</a>
                                         </li>
                     </ul>
                 </div>
@@ -175,41 +177,6 @@
             <div class="clearfix"></div>
         </div>
     </div>
-    <div id="svanslider" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <!-- In case: Banners count == 1 => Do not show slide button -->
-                        <li data-target="#svanslider" data-slide-to="0" class="active"></li>
-                        <li data-target="#svanslider" data-slide-to="1"></li>
-                        <li data-target="#svanslider" data-slide-to="2"></li>
-                        <li data-target="#svanslider" data-slide-to="3"></li>
-        </ol>
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <a href="http://svanclinic.vn/dich-vu/giam-can-giam-beo/giam-beo-cong-nghe-contri-ultrashape">
-                                <div class="image" style="background-image:url('img/Banner-Web-1920-x-1297.png')"></div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="http://www.svanclinic.vn/gioi-thieu">
-                                <div class="image" style="background-image:url('img/khonggiangh.jpg')"></div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="http://www.svanclinic.vn/tin-tuc/tin-tuc-dich-vu/giam-beo-that-hieu-qua-that">
-                                <div class="image" style="background-image:url('img/giambeo_dcl3.jpg')"></div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="http://www.svanclinic.vn/gioi-thieu">
-                                <div class="image" style="background-image:url('img/bacsi_final21.jpg')"></div>
-                            </a>
-                        </div>
-        </div>
-        <div class="overlay"></div>
-    </div>
-    <div class="clearfix"> </div>
 </header>
 @yield('content')
 <footer class="footer">
@@ -218,7 +185,7 @@
                 <div class="row">
                             <div class="col-xs-4 item">
                                 <div class="col-xs-4 border-right">
-                                    <img src="/Upload/Locations/0d198601-cdd4-4cc4-bdbe-4cf46ced3b83/home-building.png" class="img-responsive width-100">
+                                    <img src="http://www.svanclinic.vn/Upload/Locations/0d198601-cdd4-4cc4-bdbe-4cf46ced3b83/home-building.png" class="img-responsive width-100">
                                 </div>
                                 <div class="col-xs-8 border-left">
                                     <div class="info">
@@ -230,7 +197,7 @@
                             </div>
                             <div class="col-xs-4 item">
                                 <div class="col-xs-4 border-right">
-                                    <img src="/Upload/Locations/32ed3994-9fae-4637-a124-d051f517f9d8/branch.png" class="img-responsive width-100">
+                                    <img src="http://www.svanclinic.vn/Upload/Locations/32ed3994-9fae-4637-a124-d051f517f9d8/branch.png" class="img-responsive width-100">
                                 </div>
                                 <div class="col-xs-8 border-left">
                                     <div class="info">
@@ -292,6 +259,7 @@
         <script src="js/wow.js"></script>
         <!-- my core JavaScript-->
         <script src="js/main.js"></script>
+        <script src="js/injectCSS.js"></script>
         <script src="js/default.js"></script>
         <!-- <script src="/Content/layout/js/responsive.js"></script> -->
 

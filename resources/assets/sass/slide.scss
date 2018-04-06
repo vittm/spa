@@ -52,42 +52,42 @@
 }
 
 .slick-prev:before, .slick-next:before {
-  font-family: "slick";
   font-size: 20px;
   line-height: 1;
   color: #ffffff;
   opacity: 0.75;
+  font-family: "Font Awesome\ 5 Free";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.slick-prev {
-  left: -25px;
-  &[dir="rtl"] {
-    left: auto;
-    right: -25px;
-  }
-  &:before {
-    content: "←";
-    &[dir="rtl"] {
-      content: "→";
-    }
-  }
-}
+// .slick-prev {
+//   left: -25px;
+//   &[dir="rtl"] {
+//     left: auto;
+//     right: -25px;
+//   }
+//   &:before {
+//     content: "←";
+//     &[dir="rtl"] {
+//       content: "→";
+//     }
+//   }
+// }
 
-.slick-next {
-  right: -25px;
-  &[dir="rtl"] {
-    left: -25px;
-    right: auto;
-  }
-  &:before {
-    content: "→";
-    &[dir="rtl"] {
-      content: "←";
-    }
-  }
-}
+// .slick-next {
+//   right: -25px;
+//   &[dir="rtl"] {
+//     left: -25px;
+//     right: auto;
+//   }
+//   &:before {
+//     content: "→";
+//     &[dir="rtl"] {
+//       content: "←";
+//     }
+//   }
+// }
 
 /* Dots */
 
@@ -137,7 +137,6 @@
         content: "•";
         width: 20px;
         height: 20px;
-        font-family: "slick";
         font-size: 6px;
         line-height: 20px;
         text-align: center;

@@ -2,10 +2,45 @@
 @extends('layout')
 
 @section('content')
+<div id="svanslider" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <!-- In case: Banners count == 1 => Do not show slide button -->
+                        <li data-target="#svanslider" data-slide-to="0" class="active"></li>
+                        <li data-target="#svanslider" data-slide-to="1"></li>
+                        <li data-target="#svanslider" data-slide-to="2"></li>
+                        <li data-target="#svanslider" data-slide-to="3"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <a href="http://svanclinic.vn/dich-vu/giam-can-giam-beo/giam-beo-cong-nghe-contri-ultrashape">
+                                <div class="image" style="background-image:url('img/Banner-Web-1920-x-1297.png')"></div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="http://www.svanclinic.vn/gioi-thieu">
+                                <div class="image" style="background-image:url('img/khonggiangh.jpg')"></div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="http://www.svanclinic.vn/tin-tuc/tin-tuc-dich-vu/giam-beo-that-hieu-qua-that">
+                                <div class="image" style="background-image:url('img/giambeo_dcl3.jpg')"></div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="http://www.svanclinic.vn/gioi-thieu">
+                                <div class="image" style="background-image:url('img/bacsi_final21.jpg')"></div>
+                            </a>
+                        </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <div class="clearfix"> </div>
 <div class="wrapper">
             <div class="flower-theme-default">
-                <div class="left-flower"><img src="/Content/layout/images/flower/01.png" alt=""></div>
-                <div class="right-flower"><img src="/Content/layout/images/flower/02.png" alt=""></div>
+                <div class="left-flower"><img src="http://www.svanclinic.vn/Content/layout/images/flower/01.png" alt=""></div>
+                <div class="right-flower"><img src="http://www.svanclinic.vn/Content/layout/images/flower/02.png" alt=""></div>
             </div>
     <div class="intro-why-chose">
         <div class="container">
@@ -204,7 +239,7 @@ Giảm B&#233;o Tạo Form Perfect Shape                                        
                             <div class="news-item">
                                 <div class="news-img">
                                     <a href="/tin-tuc/tin-tuc-dich-vu/thang-vang-tri-an-giam-gia-truc-tiep-50-tat-ca-cac-dich-vu-lam-dep">
-                                        <img src="/Upload/News/02bebd1b-633d-4ff4-9f20-2af21534e53b/khuyen-mai-thang.jpg" alt="Th&#225;ng v&#224;ng tri &#226;n" title="Th&#225;ng v&#224;ng tri &#226;n - giảm gi&#225; trực tiếp 50% tất cả c&#225;c dịch vụ l&#224;m đẹp">
+                                        <img src="http://www.svanclinic.vn/Upload/News/02bebd1b-633d-4ff4-9f20-2af21534e53b/khuyen-mai-thang.jpg" alt="Th&#225;ng v&#224;ng tri &#226;n" title="Th&#225;ng v&#224;ng tri &#226;n - giảm gi&#225; trực tiếp 50% tất cả c&#225;c dịch vụ l&#224;m đẹp">
                                     </a>
                                 </div>
                                 <div class="news-title">
@@ -225,7 +260,7 @@ Th&#225;ng v&#224;ng tri &#226;n - giảm gi&#225; trực tiếp 50% tất cả 
                             <div class="news-item">
                                 <div class="news-img">
                                     <a href="/tin-tuc/tin-tuc-dich-vu/tu-tri-nam-rong-ra-2-nam-khong-khoi-da-sach-nam-chi-trong-10-ngay">
-                                        <img src="/Upload/News/f2fae239-ef40-46ec-9e9e-ee0dec4890d3/TRƯỚC-SAU_nam-thien-nga-min.jpg">
+                                        <img src="http://www.svanclinic.vn/Upload/News/f2fae239-ef40-46ec-9e9e-ee0dec4890d3/TRU%CC%9BO%CC%9B%CC%81C-SAU_nam-thien-nga-min.jpg">
                                     </a>
                                 </div>
                                 <div class="news-title">
@@ -246,7 +281,7 @@ Tự trị n&#225;m r&#242;ng r&#227; 2 năm kh&#244;ng khỏi, da sạch n&#225
                             <div class="news-item">
                                 <div class="news-img">
                                     <a href="/tin-tuc/tin-tuc-dich-vu/dep-tu-nhien-nhung-khong-tu-nhien-ma-dep">
-                                        <img src="/Upload/News/6c04c28b-be89-49f1-9316-fd2b7048326b/Dep-tu-nhien-nhung-khong-tu-nhien-ma-dep.png">
+                                        <img src="http://www.svanclinic.vn/Upload/News/6c04c28b-be89-49f1-9316-fd2b7048326b/Dep-tu-nhien-nhung-khong-tu-nhien-ma-dep.png">
                                     </a>
                                 </div>
                                 <div class="news-title">
@@ -295,7 +330,7 @@ Tự trị n&#225;m r&#242;ng r&#227; 2 năm kh&#244;ng khỏi, da sạch n&#225
                             <div class="video-info">
                                 <div class="view">
                                     <span id="0INIJ2aS4Mo"></span> <span>&nbsp;Lượt xem</span>
-                                    <script>getViewCount('0INIJ2aS4Mo');</script>
+                                    
                                 </div>
                                 <div class="created">
                                    12/7/2017
@@ -315,7 +350,7 @@ Tự trị n&#225;m r&#242;ng r&#227; 2 năm kh&#244;ng khỏi, da sạch n&#225
                             <div class="video-info">
                                 <div class="view">
                                     <span id="qrq5NA4CGK0"></span> <span>&nbsp;Lượt xem</span>
-                                    <script>getViewCount('qrq5NA4CGK0');</script>
+                                    
                                 </div>
                                 <div class="created">
                                    12/7/2017
@@ -335,7 +370,7 @@ Tự trị n&#225;m r&#242;ng r&#227; 2 năm kh&#244;ng khỏi, da sạch n&#225
                             <div class="video-info">
                                 <div class="view">
                                     <span id="SoGkHp7lc0A"></span> <span>&nbsp;Lượt xem</span>
-                                    <script>getViewCount('SoGkHp7lc0A');</script>
+
                                 </div>
                                 <div class="created">
                                    12/6/2017
@@ -453,47 +488,47 @@ Tự trị n&#225;m r&#242;ng r&#227; 2 năm kh&#244;ng khỏi, da sạch n&#225
             <div class="intro-partner-slider">
                     <div class="item">
                         <div class="item-image">
-                            <img src="/Upload/Partner/09759723-ecee-4f6d-a7dc-1866f71c7b61/ultra-1.png" alt="ultra">
+                            <img src="http://www.svanclinic.vn/Upload/Partner/09759723-ecee-4f6d-a7dc-1866f71c7b61/ultra-1.png" alt="ultra">
                         </div>
                     </div> 
                     <div class="item">
                         <div class="item-image">
-                            <img src="/Upload/Partner/ece52ef3-7ba1-49f2-b66d-6f993ecb8e3a/ultherapy.png" alt="ulthe">
+                            <img src="http://www.svanclinic.vn/Upload/Partner/ece52ef3-7ba1-49f2-b66d-6f993ecb8e3a/ultherapy.png" alt="ulthe">
                         </div>
                     </div> 
                     <div class="item">
                         <div class="item-image">
-                            <img src="/Upload/Partner/40b0554b-1c4d-4311-9881-b76df94012d0/thatso.png" alt="That">
+                            <img src="http://www.svanclinic.vn/Upload/Partner/40b0554b-1c4d-4311-9881-b76df94012d0/thatso.png" alt="That">
                         </div>
                     </div> 
                     <div class="item">
                         <div class="item-image">
-                            <img src="/Upload/Partner/902baa44-743d-46ff-b94f-ba487a0d6178/restylane.png" alt="Res">
+                            <img src="http://www.svanclinic.vn/Upload/Partner/902baa44-743d-46ff-b94f-ba487a0d6178/restylane.png" alt="Res">
                         </div>
                     </div> 
                     <div class="item">
                         <div class="item-image">
-                            <img src="/Upload/Partner/769f648c-db9f-458b-b145-7b620dc64247/logo-GW-mtuprlcbhegb77u16p88vvhqgr9ftghl186rw38jhc.jpg" alt="GENE">
+                            <img src="http://www.svanclinic.vn/Upload/Partner/769f648c-db9f-458b-b145-7b620dc64247/logo-GW-mtuprlcbhegb77u16p88vvhqgr9ftghl186rw38jhc.jpg" alt="GENE">
                         </div>
                     </div> 
                     <div class="item">
                         <div class="item-image">
-                            <img src="/Upload/Partner/3b655796-9ee3-4c27-bfe4-e6e40a190715/inbody.png" alt="inbody">
+                            <img src="http://www.svanclinic.vn/Upload/Partner/769f648c-db9f-458b-b145-7b620dc64247/logo-GW-mtuprlcbhegb77u16p88vvhqgr9ftghl186rw38jhc.jpg" alt="inbody">
                         </div>
                     </div> 
                     <div class="item">
                         <div class="item-image">
-                            <img src="/Upload/Partner/bafbe1db-a99e-47d7-9f7a-b7f0758fa3c1/image.png" alt="IMA">
+                            <img src="http://www.svanclinic.vn/Upload/Partner/769f648c-db9f-458b-b145-7b620dc64247/logo-GW-mtuprlcbhegb77u16p88vvhqgr9ftghl186rw38jhc.jpg" alt="IMA">
                         </div>
                     </div> 
                     <div class="item">
                         <div class="item-image">
-                            <img src="/Upload/Partner/10d696f7-62ec-48df-b56d-9106802f6427/heliocare.png" alt="HELI">
+                            <img src="http://www.svanclinic.vn/Upload/Partner/769f648c-db9f-458b-b145-7b620dc64247/logo-GW-mtuprlcbhegb77u16p88vvhqgr9ftghl186rw38jhc.jpg" alt="HELI">
                         </div>
                     </div> 
                     <div class="item">
                         <div class="item-image">
-                            <img src="/Upload/Partner/bca54a0c-16f8-4645-bf39-a8729724f4e1/DiodeLaser.png" alt="DIODELASER">
+                            <img src="http://www.svanclinic.vn/Upload/Partner/769f648c-db9f-458b-b145-7b620dc64247/logo-GW-mtuprlcbhegb77u16p88vvhqgr9ftghl186rw38jhc.jpg" alt="DIODELASER">
                         </div>
                     </div> 
             </div>

@@ -193,7 +193,6 @@
         font-size: 30px;
         color: #3ab572;
         text-transform: uppercase;
-        font-family: 'myriadBold';
         text-align: center;
         padding: 10px;
       }
@@ -601,7 +600,7 @@
     transition: all 0.5s ease;
     &:before {
       content: "\f062";
-      font-family: "FontAwesome";
+      font-family: "Font Awesome\ 5 Free";
       font-size: 18px;
     }
     &:active, &:focus, &:visited {
@@ -636,7 +635,6 @@
       text-transform: uppercase;
       color: #3d9c74;
       background: #fff;
-      font-family: 'myriadBold';
       font-size: 13px;
       position: relative;
       span:before {
@@ -867,7 +865,7 @@
         padding: 1px 5px 1px 0;
         &:before {
           content: '\f005';
-          font-family: fontawesome;
+          font-family: Font Awesome\ 5 Free;
           font-size: 25px;
           color: #3ab572;
         }
@@ -1001,9 +999,10 @@
   
   .header {
     width: 100%;
-    min-width: 1024px;
     min-height: 50px;
-    position: relative;
+    position: fixed;
+    top:0;
+    z-index: 999;
     margin: 0 auto;
     background: #fff;
     display: block;
@@ -1086,8 +1085,19 @@
                     }
                 }
             }
-              &.home a {
+              &.home > a {
                 padding: 10px 0;
+                border-bottom-left-radius: 70px;
+                &:hover {
+                  background: transparent;
+                  box-shadow: none;
+                }
+                & > img {
+                  width: 120px;
+                  position: absolute;
+                  top: 19px;
+                  right: 0;
+                }
               }
               &.current-page > a {
                 background: #3ab572;
@@ -1458,6 +1468,7 @@
   #svanslider {
     height: 590px;
     position: relative;
+    margin-top: 63px;
     img {
       width: 100%;
       height: auto;
@@ -1552,7 +1563,6 @@
   
   .wrapper {
     width: 100%;
-    min-width: 1024px;
     min-height: 100px;
     background: #fff;
     margin: 0 auto;
@@ -1670,7 +1680,6 @@
         font-size: 30px;
         font-weight: bold;
         text-align: center;
-        font-family: 'myriadBold';
         text-transform: uppercase;
         color: #3ab572;
         z-index: 10;
@@ -1920,8 +1929,8 @@
           z-index: 50;
           right: -1px;
           &:before {
-            content: "\f105";
-            font-family: "FontAwesome";
+            content: "\f061";
+            font-family: "Font Awesome\ 5 Free";
             font-size: 50px;
             left: 10px;
             color: #fff;
@@ -1937,7 +1946,7 @@
           left: -1px;
           &:before {
             content: "\f104";
-            font-family: "FontAwesome";
+            font-family: "Font Awesome\ 5 Free";
             font-size: 50px;
             left: 10px;
             color: #fff;
@@ -2048,7 +2057,7 @@
             &:before {
               content: '\f055';
               color: #3ab572;
-              font-family: "FontAwesome";
+              font-family: "Font Awesome\ 5 Free";
               font-size: 25px;
               position: absolute;
               left: 3px;
@@ -2140,7 +2149,7 @@
             font-size: 12px;
             &:before {
               content: '\f06e';
-              font-family: "FontAwesome";
+              font-family: "Font Awesome\ 5 Free";
               color: #3ab572;
               font-size: 14px;
             }
@@ -2153,7 +2162,7 @@
             font-size: 12px;
             &:before {
               content: '\f073';
-              font-family: "FontAwesome";
+              font-family: "Font Awesome\ 5 Free";
               color: #3ab572;
               font-size: 14px;
             }
@@ -2239,7 +2248,7 @@
               }
               :before {
                 content: '\f10d';
-                font-family: "fontawesome";
+                font-family: "Font Awesome\ 5 Free";
                 font-size: 30px;
                 color: #3ab572;
                 position: absolute;
@@ -2248,7 +2257,7 @@
               }
               :after {
                 content: '\f10e';
-                font-family: "fontawesome";
+                font-family: "Font Awesome\ 5 Free";
                 font-size: 30px;
                 color: #3ab572;
                 position: absolute;
@@ -2315,18 +2324,18 @@
           z-index: 50;
         }
         .slick-prev:before {
-          font-family: "FontAwesome";
+          font-family: "Font Awesome\ 5 Free";
           font-size: 50px;
           left: 10px;
           color: #fff;
         }
         .slick-next {
           &:before {
-            font-family: "FontAwesome";
+            font-family: "Font Awesome\ 5 Free";
             font-size: 50px;
             left: 10px;
             color: #fff;
-            content: "\f105";
+            content: "\f061";
             margin-left: 5px;
           }
           right: 0;
@@ -2348,7 +2357,6 @@
           font-size: 30px;
           font-weight: bold;
           text-align: center;
-          font-family: 'myriadBold';
           text-transform: uppercase;
           color: #3d9c74;
           z-index: 10;
@@ -3004,7 +3012,7 @@
             }
             &:before {
               content: '\f101 ';
-              font-family: 'fontawesome';
+              font-family: 'Font Awesome\ 5 Free';
               position: absolute;
               left: -20px;
               top: 13px;
@@ -3045,18 +3053,18 @@
             z-index: 50;
           }
           .slick-prev:before {
-            font-family: "FontAwesome";
+            font-family: "Font Awesome\ 5 Free";
             font-size: 40px;
             left: 10px;
             color: #fff;
           }
           .slick-next {
             &:before {
-              font-family: "FontAwesome";
+              font-family: "Font Awesome\ 5 Free";
               font-size: 40px;
               left: 10px;
               color: #fff;
-              content: "\f105";
+              content: "\f061";
               margin-left: 5px;
             }
             right: 10px;
@@ -3276,7 +3284,7 @@
               }
               &:before {
                 content: '\f101 ';
-                font-family: 'fontawesome';
+                font-family: 'Font Awesome\ 5 Free';
                 position: absolute;
                 left: -20px;
                 top: 0px;
@@ -3388,7 +3396,7 @@
             }
             &:before {
               content: '\f101 ';
-              font-family: 'fontawesome';
+              font-family: 'Font Awesome\ 5 Free';
               position: absolute;
               left: -20px;
               top: 0px;
@@ -3448,18 +3456,18 @@
               z-index: 50;
             }
             .slick-prev:before {
-              font-family: "FontAwesome";
+              font-family: "Font Awesome\ 5 Free";
               font-size: 60px;
               left: 10px;
               color: #3d9c74;
             }
             .slick-next {
               &:before {
-                font-family: "FontAwesome";
+                font-family: "Font Awesome\ 5 Free";
                 font-size: 60px;
                 left: 10px;
                 color: #3d9c74;
-                content: "\f105";
+                content: "\f061";
                 margin-left: 5px;
               }
               right: 10px;
@@ -3528,8 +3536,8 @@
           position: relative;
           color: #3d9c74;
           &:before {
-            content: '\f105';
-            font-family: "fontawesome";
+            content: '\f061';
+            font-family: "Font Awesome\ 5 Free";
             font-size: 50px;
             position: absolute;
             left: 0;
@@ -3612,18 +3620,18 @@
               z-index: 50;
             }
             .slick-prev:before {
-              font-family: "FontAwesome";
+              font-family: "Font Awesome\ 5 Free";
               font-size: 50px;
               left: 10px;
               color: #3ab572;
             }
             .slick-next {
               &:before {
-                font-family: "FontAwesome";
+                font-family: "Font Awesome\ 5 Free";
                 font-size: 50px;
                 left: 10px;
                 color: #3ab572;
-                content: "\f105";
+                content: "\f061";
                 margin-left: 5px;
               }
               right: -20px;
@@ -3781,7 +3789,6 @@
               }
               .item-name {
                 text-align: center;
-                font-family: 'myriadBold';
                 color: #3ab572;
                 font-size: 18px;
               }
@@ -3865,7 +3872,6 @@
             text-transform: uppercase;
             color: #3d9c74;
             background: #fff;
-            font-family: 'myriadBold';
             font-size: 13px;
             position: relative;
             span:before {
@@ -3979,7 +3985,7 @@
             top: 35%;
           }
           .slick-prev:before {
-            font-family: "FontAwesome";
+            font-family: "Font Awesome\ 5 Free";
             font-size: 50px;
             left: 10px;
             color: #fff;
@@ -3987,12 +3993,12 @@
           }
           .slick-next {
             &:before {
-              font-family: "FontAwesome";
+              font-family: "Font Awesome\ 5 Free";
               font-size: 50px;
               left: 10px;
               color: #fff;
               opacity: 1;
-              content: "\f105";
+              content: "\f061";
               margin-left: 5px;
             }
             right: -1px;
@@ -4108,7 +4114,7 @@
                 font-size: 12px;
                 &:before {
                   content: '\f06e';
-                  font-family: "FontAwesome";
+                  font-family: "Font Awesome\ 5 Free";
                   color: #3ab572;
                   font-size: 14px;
                 }
@@ -4121,7 +4127,7 @@
                 font-size: 12px;
                 &:before {
                   content: '\f073';
-                  font-family: "FontAwesome";
+                  font-family: "Font Awesome\ 5 Free";
                   color: #3ab572;
                   font-size: 14px;
                 }
@@ -4137,7 +4143,7 @@
             top: 35%;
           }
           .slick-prev:before {
-            font-family: "FontAwesome";
+            font-family: "Font Awesome\ 5 Free";
             font-size: 50px;
             left: 10px;
             color: #fff;
@@ -4145,12 +4151,12 @@
           }
           .slick-next {
             &:before {
-              font-family: "FontAwesome";
+              font-family: "Font Awesome\ 5 Free";
               font-size: 50px;
               left: 10px;
               color: #fff;
               opacity: 1;
-              content: "\f105";
+              content: "\f061";
               margin-left: 5px;
             }
             right: -1px;
@@ -4271,7 +4277,7 @@
           top: 35%;
         }
         .slick-prev:before {
-          font-family: "FontAwesome";
+          font-family: "Font Awesome\ 5 Free";
           font-size: 50px;
           left: 10px;
           color: #fff;
@@ -4279,12 +4285,12 @@
         }
         .slick-next {
           &:before {
-            font-family: "FontAwesome";
+            font-family: "Font Awesome\ 5 Free";
             font-size: 50px;
             left: 10px;
             color: #fff;
             opacity: 1;
-            content: "\f105";
+            content: "\f061";
             margin-left: 5px;
           }
           right: -1px;
@@ -4373,7 +4379,7 @@
               font-size: 12px;
               &:before {
                 content: '\f06e';
-                font-family: "FontAwesome";
+                font-family: "Font Awesome\ 5 Free";
                 color: #3ab572;
                 font-size: 14px;
               }
@@ -4386,7 +4392,7 @@
               font-size: 12px;
               &:before {
                 content: '\f073';
-                font-family: "FontAwesome";
+                font-family: "Font Awesome\ 5 Free";
                 color: #3ab572;
                 font-size: 14px;
               }
@@ -4408,8 +4414,8 @@
           position: relative;
           color: #828c8b;
           &:before {
-            content: '\f105';
-            font-family: 'fontawesome';
+            content: '\f061';
+            font-family: 'Font Awesome\ 5 Free';
             position: absolute;
             left: 0;
             top: -20px;
@@ -4504,7 +4510,7 @@
               }
               &:before {
                 content: '\f101 ';
-                font-family: 'fontawesome';
+                font-family: 'Font Awesome\ 5 Free';
                 position: absolute;
                 left: -20px;
                 top: 0px;
@@ -4589,7 +4595,6 @@
                   padding-bottom: 5px;
                   a {
                     color: #3ab572;
-                    font-family: 'myriadBold';
                     &:hover {
                       color: #3d9c74;
                     }
@@ -4617,7 +4622,7 @@
                   }
                   &:before {
                     content: '\f101 ';
-                    font-family: 'fontawesome';
+                    font-family: 'Font Awesome\ 5 Free';
                     position: absolute;
                     left: -20px;
                     top: 0px;
@@ -4666,17 +4671,17 @@
                 z-index: 50;
               }
               .slick-prev:before {
-                font-family: "FontAwesome";
+                font-family: "Font Awesome\ 5 Free";
                 font-size: 40px;
                 left: 10px;
                 color: #fff;
               }
               .slick-next:before {
-                font-family: "FontAwesome";
+                font-family: "Font Awesome\ 5 Free";
                 font-size: 40px;
                 left: 10px;
                 color: #fff;
-                content: "\f105";
+                content: "\f061";
                 margin-left: 5px;
               }
               .slick-prev:before {
@@ -5014,7 +5019,6 @@
   .footer {
     width: 100%;
     min-height: 1px;
-    min-width: 1024px;
     margin: 0 auto;
     padding-top: 5px;
     .hotline {
@@ -5053,7 +5057,7 @@
       }
       .address {
         color: #fff;
-        font-size: 11px;
+        font-size: 16px;
         padding-left: 25px;
         position: relative;
         &:before {

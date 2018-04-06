@@ -17,7 +17,15 @@ Route::get('/', function () {
 Route::get('/detail', function () {
     return view('detail');
 });
-
+Route::get('/contact', function () {
+    return view('contact');
+});
+Route::get('/tin-tuc', function () {
+    return view('news');
+});
+Route::get('/gioi-thieu', function () {
+    return view('info');
+});
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
