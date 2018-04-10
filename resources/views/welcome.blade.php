@@ -40,6 +40,7 @@
 <div class="wrapper">
             <div class="flower-theme-default">
                 <div class="left-flower"><img src="http://www.svanclinic.vn/Content/layout/images/flower/01.png" alt=""></div>
+                <div class="bottom-flower"><img src="http://www.svanclinic.vn/Content/layout/images/flower/01.png" alt=""></div>
                 <div class="right-flower"><img src="http://www.svanclinic.vn/Content/layout/images/flower/02.png" alt=""></div>
             </div>
     <div class="intro-why-chose">
@@ -83,18 +84,18 @@
         </div>
     </div>
     <div class="intro-service">
-        <div class="container">
-            <div class="title">
-                <h2>
-                    <i>DỊCH VỤ NỔI BẬT 
-                            <span class="line-left"></span>
-                        <span class="line-right"></span>
-                    </i>
-
-                </h2>
-            </div>
-        </div>
         <div class="intro-service-content">
+            <div class="container">
+                <div class="title" style="padding-top: 40px">
+                    <h2>
+                        <i>DỊCH VỤ NỔI BẬT 
+                                <span class="line-left"></span>
+                            <span class="line-right"></span>
+                        </i>
+
+                    </h2>
+                </div>
+            </div>
             <div class="container">
                 <div class="service-slider">
                         <div class="item">
@@ -251,7 +252,7 @@ Th&#225;ng v&#224;ng tri &#226;n - giảm gi&#225; trực tiếp 50% tất cả 
 
                                 </div>
                                 <div class="read-more">
-                                    <a href="/tin-tuc/tin-tuc-dich-vu/thang-vang-tri-an-giam-gia-truc-tiep-50-tat-ca-cac-dich-vu-lam-dep">Chi tiết</a>
+                                    <a href="/tin-tuc/tin-tuc-dich-vu/thang-vang-tri-an-giam-gia-truc-tiep-50-tat-ca-cac-dich-vu-lam-dep">Xem Thêm</a>
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
@@ -272,7 +273,7 @@ Tự trị n&#225;m r&#242;ng r&#227; 2 năm kh&#244;ng khỏi, da sạch n&#225
 
                                 </div>
                                 <div class="read-more">
-                                    <a href="/tin-tuc/tin-tuc-dich-vu/tu-tri-nam-rong-ra-2-nam-khong-khoi-da-sach-nam-chi-trong-10-ngay">Chi tiết</a>
+                                    <a href="/tin-tuc/tin-tuc-dich-vu/tu-tri-nam-rong-ra-2-nam-khong-khoi-da-sach-nam-chi-trong-10-ngay">Xem Thêm</a>
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
@@ -293,7 +294,7 @@ Tự trị n&#225;m r&#242;ng r&#227; 2 năm kh&#244;ng khỏi, da sạch n&#225
 
                                 </div>
                                 <div class="read-more">
-                                    <a href="/tin-tuc/tin-tuc-dich-vu/dep-tu-nhien-nhung-khong-tu-nhien-ma-dep">Chi tiết</a>
+                                    <a href="/tin-tuc/tin-tuc-dich-vu/dep-tu-nhien-nhung-khong-tu-nhien-ma-dep">Xem Thêm</a>
                                     <div class="clearfix"></div>
                                 </div>
                             </div>

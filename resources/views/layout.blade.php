@@ -25,7 +25,7 @@
 
     <!-- Custom Style -->
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <script src="js/jquery.min.js"></script>
 	
 	<!-- Added by TinHo-->
@@ -183,40 +183,29 @@
         <div class="footer-2">
             <div class="container">
                 <div class="row">
-                            <div class="col-xs-4 item">
-                                <div class="col-xs-4 border-right">
-                                    <img src="http://www.svanclinic.vn/Upload/Locations/0d198601-cdd4-4cc4-bdbe-4cf46ced3b83/home-building.png" class="img-responsive width-100">
-                                </div>
-                                <div class="col-xs-8 border-left">
-                                    <div class="info">
-                                        
-                                        <p class="address">363 – 365, Phạm Ngũ L&#227;o, Phường Phạm Ngũ L&#227;o, Quận 1, TP. HCM</p>
-                                        <p class="phone">19000117</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-4 item">
-                                <div class="col-xs-4 border-right">
-                                    <img src="http://www.svanclinic.vn/Upload/Locations/32ed3994-9fae-4637-a124-d051f517f9d8/branch.png" class="img-responsive width-100">
-                                </div>
-                                <div class="col-xs-8 border-left">
-                                    <div class="info">
-                                        
-                                        <p class="address">61 - City Land Center Hill - Trần Thị Nghỉ, Phường 7, Quận G&#242; Vấp, Tp.HCM</p>
-                                        <p class="phone">19000117</p>
-                                    </div>
-                                </div>
-                            </div>
-                    <div class="col-xs-4">
-                        <div class="fanpage">
+                        <ul class="footer-menu col-md-6">
+                            <li><img width="45" height="45" src="img/placeholder.png" alt="">363 – 365, Phạm Ngũ Lão, Phường Phạm Ngũ Lão, Quận 1, TP. HCM</li>
+                            <li><img width="45" height="45" src="img/placeholder.png" alt="">61 - City Land Center Hill - Trần Thị Nghỉ, Phường 7, Quận Gò Vấp, Tp.HCM</li>
+                            <li><img width="35" height="35" src="img/phone-call.png" alt=""> Hotline: 19000117</li>
+                            <li><img width="30" height="30" src="img/calendar.png" alt=""> Thời gian làm việc | T2 -CN 8:00 - 20:00 </li>
+                        </ul>
+                        <div class="col-md-6">
+                        <div class="fb-page" 
+                            data-href="https://www.facebook.com/svanclinic.vn"
+                            data-width="380" 
+                            data-hide-cover="false"
+                            data-show-facepile="false"></div>
                             <div class="fb-page" 
-                              data-href="https://www.facebook.com/svanclinic.vn"
-                              data-hide-cover="false"
-                              data-show-facepile="false" 
-                              data-show-posts="false">
-                            </div>
+  data-tabs="timeline,events,messages"
+  data-href="https://www.facebook.com/YoloBookStore"
+  data-width="380" 
+  data-hide-cover="false"></div>
+                        <ul class="social-network social-circle ">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google"></i></a></li>
+                        </ul>
                         </div>
-                    </div>
                 </div>
             </div>
         </div> 
