@@ -19,24 +19,14 @@ $(document).ready(function(){
               $('#upload_file').trigger('click');
             }
         },
-    toolbar: 'styleselect bold italic underline | forecolor backcolor | alignleft aligncenter alignright | bullist numlist outdent indent | link image table youtube giphy | code',
+    toolbar: 'styleselect bold italic underline | forecolor backcolor | alignleft aligncenter alignright | bullist numlist outdent indent | link image table youtube giphy | code | customers',
     convert_urls: false,
     image_caption: true,
-    image_title: true
-  });
-  
-  tinymce.init({
-    selector: 'textarea.richTextBox',
-    plugins: 'code wordcount',
-    toolbar: 'undo redo | currentdate',
-    content_css: [
-      '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
-      '//www.tinymce.com/css/codepen.min.css'],
-    
+    image_title: true,
     setup: function(editor) {
       
       function toTimeHtml(date) {
-        return '<time datetime="' + date.toString() + '">' + date.toDateString() + '</time>';
+        return "<div class='login'> <div class='login_inner'> <div class='login_inner__avatar'></div> <input id='username-customer' placeholder='Give yourself a username' type='text'> <input id='email-customer' placeholder='What is your email?' type='email'> <input id='phone-customer' placeholder='phone' type='text'> <input type='button' class='btn-customer' value='Sign up'> </div> <div class='login_inner__check'> <div class='login_inner__check--complete'> <i class='fa fa-check'></i> </div> </div></div><h2></h2></div>";
       }
       
       function insertDate() {
@@ -44,12 +34,14 @@ $(document).ready(function(){
         editor.insertContent(html);
       }
   
-      editor.addButton('currentdate', {
+      editor.addButton('customers', {
         icon: 'insertdatetime',
-        //image: 'http://p.yusukekamiyamane.com/icons/search/fugue/icons/calendar-blue.png',
+        //image: 'http://p.yusukekamiyamane.com/icons/search/fugue/icons/application-form.png',
         tooltip: "Insert Current Date",
         onclick: insertDate
       });
     }
   });
+  
+  
 });
