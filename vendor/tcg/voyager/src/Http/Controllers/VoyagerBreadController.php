@@ -173,19 +173,21 @@ class VoyagerBreadController extends Controller
 
     public function edit(Request $request, $id)
     {
+        
         $slug = $this->getSlug($request);
-
+        //categoies
         $dataType = Voyager::model('DataType')->where('slug', '=', $slug)->first();
+        //in ra tables với 
 
         // Compatibility with Model binding.
         $id = $id instanceof Model ? $id->{$id->getKeyName()} : $id;
-
+        
         $relationships = $this->getRelationships($dataType);
 
         $dataTypeContent = (strlen($dataType->model_name) != 0)
             ? app($dataType->model_name)->with($relationships)->findOrFail($id)
             : DB::table($dataType->name)->where('id', $id)->first(); // If Model doest exist, get data from table name
-
+        
         foreach ($dataType->editRows as $key => $row) {
             $details = json_decode($row->details);
             $dataType->editRows[$key]['col_width'] = isset($details->width) ? $details->width : 100;

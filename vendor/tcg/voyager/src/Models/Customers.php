@@ -7,20 +7,19 @@ use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Traits\HasRelationships;
 use TCG\Voyager\Traits\Translatable;
 
-class Category extends Model
+class Customers extends Model
 {
     use Translatable,
         HasRelationships;
 
-    protected $translatable = ['slug', 'name'];
 
-    protected $table = 'categories';
+    protected $table = 'customers';
 
-    protected $fillable = ['slug', 'name', 'images'];
+    protected $fillable = ['phone', 'email', 'content', 'name','source','medium','campaign','employer','status'];
 
     public function posts()
     {
-        return $this->hasMany(Voyager::modelClass('Post'))
+        return $this->hasMany(Voyager::modelClass('Customers'))
             ->published()
             ->orderBy('created_at', 'DESC');
     }
@@ -30,3 +29,5 @@ class Category extends Model
         return $this->belongsTo(self::class);
     }
 }
+
+

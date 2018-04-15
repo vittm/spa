@@ -50,14 +50,8 @@ Route::group(['as' => 'voyager.'], function () {
 
         // Role Routes
         Route::resource('roles', $namespacePrefix.'VoyagerRoleController');
-        // Settings
-        Route::group([
-            'as'     => 'customers.',
-            'prefix' => 'customers',
-        ], function () use ($namespacePrefix) {
-            Route::get('list-customers', ['uses' => $namespacePrefix.'CustomersController@index',        'as' => 'index']);
-            Route::get('get-list-customers-{value}-{key}', ['uses' => $namespacePrefix.'CustomersController@change',        'as' => 'changes']);
-        });
+
+        
         // Menu Routes
         Route::group([
             'as'     => 'menus.',
