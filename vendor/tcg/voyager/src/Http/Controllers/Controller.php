@@ -209,6 +209,7 @@ abstract class Controller extends BaseController
                             $filename.'.'.$file->getClientOriginalExtension(),
                             config('voyager.storage.disk', 'public')
                         );
+                        
                         array_push($filesPath, [
                             'download_link' => $path.$filename.'.'.$file->getClientOriginalExtension(),
                             'original_name' => $file->getClientOriginalName(),
@@ -370,7 +371,7 @@ abstract class Controller extends BaseController
                     $image = Image::make($file);
 
                     $fullPath = $path.$filename.'.'.$file->getClientOriginalExtension();
-
+                    
                     $resize_width = null;
                     $resize_height = null;
                     if (isset($options->resize) && (isset($options->resize->width) || isset($options->resize->height))) {

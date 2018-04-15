@@ -54,6 +54,7 @@ class VoyagerController extends Controller
                 ->encode($file->getClientOriginalExtension(), 75);
 
             // move uploaded file from temp to uploads directory
+            
             if (Storage::disk(config('voyager.storage.disk'))->put($fullPath, (string) $image, 'public')) {
                 $status = __('voyager.media.success_uploading');
                 $fullFilename = $fullPath;
