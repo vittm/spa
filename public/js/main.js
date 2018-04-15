@@ -5,7 +5,52 @@ $(document).ready(function () {
         scrollToID( get_id, 500);
         sessionStorage.removeItem('pg_id');
     }
-
+    $.urlParam = function(name){
+      var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+        if (results==null){
+          return null;
+        }
+        else{
+          return decodeURI(results[1]) || 0;
+        }
+    }
+    $(document).ready(function () {
+      $(".btn-customer").click(function (e) {
+          e.preventDefault();
+          var url      = $(location).attr('hostname'); 
+          var form = $(this);
+          var name = $('#username-customer').val(),
+              phone = $('#phone-customer').val(),
+              email = $('#email-customer').val(),
+              source = $.urlParam('utm_soucre'),
+              medium= $.urlParam('utm_medium'),
+              campaign= $.urlParam('utm_campaign');
+          
+          $.ajax({
+              url: "../get-customer"+'-'+name+'-'+email+'-'+phone+'-'+source+'-'+medium+'-'+campaign,
+              type: 'get',
+              dataType: 'html',
+              data: {'name':name,'email':email,'phone':phone,'utm_source':source,
+                     'utm_medium':medium,'utm_campaign':campaign,"_token": "{{ csrf_token() }}"},
+              processData: false,
+              contentType: false,
+  
+              beforeSend: function () {
+                  $("body").css("cursor", "progress");
+                  $(".has-error").removeClass("has-error");
+                  $(".help-block").remove();
+              },
+  
+              success: function (d) {
+                  alert('thành công rồi nhé')
+              },
+  
+              error: function () {
+                  $(form).unbind("submit").submit();
+              }
+          });
+      });
+  });
     $('a').click(function (e){
       e.preventDefault();
       var a = $(this).attr("class");

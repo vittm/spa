@@ -24,9 +24,9 @@
     <link rel="canonical" href="http://www.svanclinic.vn/trang-chu" />
 
     <!-- Custom Style -->
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="{{ URL::to('css/app.css') }}">
+    <link rel="stylesheet" href="{{ URL::to('css/font-awesome.min.css')}}">
+    <script src="{{ URL::to('js/jquery.min.js')}}"></script>
 	
 	<!-- Added by TinHo-->
 	<style>
@@ -243,13 +243,13 @@
 
 		<!--<script type="text/javascript">window._sbzq||function(e){e._sbzq=[];var t=e._sbzq;t.push([&quot;_setAccount&quot;,47095]);var n=e.location.protocol==&quot;https:&quot;?&quot;https:&quot;:&quot;http:&quot;;var r=document.createElement(&quot;script&quot;);r.type=&quot;text/javascript&quot;;r.async=true;r.src=n+&quot;//static.subiz.com/public/js/loader.js&quot;;var i=document.getElementsByTagName(&quot;script&quot;)[0];i.parentNode.insertBefore(r,i)}(window);</script>-->
         <!-- Jquery core JavaScript -->
-        <script src="js/bootstrap.js"></script>
-        <script src="js/slick.min.js"></script>
-        <script src="js/wow.js"></script>
+        <script src="{{ URL::to('js/bootstrap.js')}}"></script>
+        <script src="{{ URL::to('js/slick.min.js')}}"></script>
+        <script src="{{ URL::to('js/wow.js')}}"></script>
         <!-- my core JavaScript-->
-        <script src="js/main.js"></script>
-        <script src="js/injectCSS.js"></script>
-        <script src="js/default.js"></script>
+        <script src="{{ URL::to('js/main.js')}}"></script>
+        <script src="{{ URL::to('js/injectCSS.js')}}"></script>
+        <script src="{{ URL::to('js/default.js')}}"></script>
         <!-- <script src="/Content/layout/js/responsive.js"></script> -->
 
 		<script>

@@ -14,9 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/detail', function () {
-    return view('detail');
-});
+
+Route::get('/posts/{title}', 'PostController@index');
+Route::get('/get-customer-{name}-{email}-{phone}-{utm_source}-{utm_medium}-{utm_campaign}', 'WidgetController@index');
+
 Route::get('/contact', function () {
     return view('contact');
 });
