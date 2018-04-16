@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
 
 Route::get('/posts/{title}', 'PostController@index');
 Route::get('/get-customer-{name}-{email}-{phone}-{utm_source}-{utm_medium}-{utm_campaign}', 'WidgetController@index');

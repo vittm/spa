@@ -13,26 +13,14 @@
         </ol>
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
+        @foreach($slides as $key => $value)
                         <div class="item active">
-                            <a href="http://svanclinic.vn/dich-vu/giam-can-giam-beo/giam-beo-cong-nghe-contri-ultrashape">
-                                <div class="image" style="background-image:url('img/Banner-Web-1920-x-1297.png')"></div>
+                            <a href="#">
+                                <div class="image" style="background-image:url('')"></div>
                             </a>
                         </div>
-                        <div class="item">
-                            <a href="http://www.svanclinic.vn/gioi-thieu">
-                                <div class="image" style="background-image:url('img/khonggiangh.jpg')"></div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="http://www.svanclinic.vn/tin-tuc/tin-tuc-dich-vu/giam-beo-that-hieu-qua-that">
-                                <div class="image" style="background-image:url('img/giambeo_dcl3.jpg')"></div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="http://www.svanclinic.vn/gioi-thieu">
-                                <div class="image" style="background-image:url('img/bacsi_final21.jpg')"></div>
-                            </a>
-                        </div>
+                        @endforeach
+                         
         </div>
         <div class="overlay"></div>
     </div>
@@ -45,7 +33,7 @@
             </div>
     <div class="intro-why-chose">
         <div class="container">
-            <div class="title">
+            <div class="title
                 <h2>
                     <i>TẠI SAO N&#202;N CHỌN SVAN CLINIC &amp; SPA 
                             <span class="line-left"></span>
