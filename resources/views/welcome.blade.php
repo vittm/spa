@@ -16,7 +16,8 @@
         @foreach($slides as $key => $value)
                         <div class="item active">
                             <a href="#">
-                                <div class="image" style="background-image:url('')"></div>
+                            
+                                <div class="image" style="background-image:url('{{Voyager::image($value->images)}}')"></div>
                             </a>
                         </div>
                         @endforeach
